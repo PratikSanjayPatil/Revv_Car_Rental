@@ -50,6 +50,11 @@ img{
 #nav > div > .menu{
     display: none;
 }
+
+#nav > div > .menu_white_logo{
+    display: none;
+}
+
 #nav > div > div {
     height: 100%;
 }
@@ -60,6 +65,10 @@ img{
     margin-left: 10px;
     color: black;
     font-size: 16px;
+    font-weight: 500;
+}
+.links a:hover{
+    color: #17a2b8;
 }
 
 /* Side Menu  */

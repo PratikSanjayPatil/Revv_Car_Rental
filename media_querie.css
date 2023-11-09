@@ -13,4 +13,12 @@
     #nav > div > .links{
         display: none;
     }
+
+    #nav > div > .main_logo{
+        display: none;
+    }
+
+    #nav > div > .menu_white_logo{
+        display: block;
+    }
 }
