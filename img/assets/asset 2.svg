@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+    <defs>
+        <style>
+            .cls-1{fill:none}.cls-2{fill:#fff}
+        </style>
+    </defs>
+    <g id="ic_profile_menu" transform="translate(4.646 4.538)">
+        <path id="Rectangle_636" d="M0 0h25v25H0z" class="cls-1" data-name="Rectangle 636" transform="translate(-4.646 -4.538)"/>
+        <g id="noun_profile_1335731" transform="translate(.107 -.622)">
+            <g id="Group_2316" data-name="Group 2316">
+                <g id="Group_2315" data-name="Group 2315">
+                    <path id="Path_2321" d="M46.574 45a.81.81 0 0 1-1.619 0 5.668 5.668 0 1 0-11.335 0A.81.81 0 0 1 32 45a7.287 7.287 0 0 1 14.574 0zm-7.287-8.1a4.453 4.453 0 1 1 4.453-4.453 4.453 4.453 0 0 1-4.453 4.459zm0-1.619a2.834 2.834 0 1 0-2.834-2.834 2.834 2.834 0 0 0 2.834 2.84z" class="cls-2" data-name="Path 2321" transform="translate(-32 -28)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

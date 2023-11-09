@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12.56" height="16.08" viewBox="0 0 12.56 16.08">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#1b1c24;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill-rule:evenodd}
+        </style>
+    </defs>
+    <g id="My-Bookings" transform="translate(1 1)">
+        <g id="Home_01-Copy-4">
+            <g id="Group-49">
+                <g id="_1">
+                    <g id="Button_Select-City_Primary_320x70">
+                        <g id="Group-4">
+                            <g id="Group_1157">
+                                <g id="Icon_Location_40x40">
+                                    <g id="Icon_faded_location">
+                                        <g id="Group_1156">
+                                            <g id="ic_location">
+                                                <path id="Shape" d="M5.28 14.08S0 10.24 0 5.76C0 2.579 2 0 5.28 0s5.28 2.579 5.28 5.76c0 4.48-5.28 8.32-5.28 8.32z" class="cls-1"/>
+                                                <path id="Path-3" d="M5.28 4.4v2.79" class="cls-1"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

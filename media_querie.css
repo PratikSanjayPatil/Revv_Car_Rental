@@ -1,0 +1,16 @@
+@media screen and (max-width:750px){
+    #nav{
+        background-color: #1c82aa;
+    }
+    #nav > div{
+        width: 60%;
+        margin: 0;
+    }
+    #nav > div > .menu{
+        display: block;
+        height: 35px;
+    }
+    #nav > div > .links{
+        display: none;
+    }
+}

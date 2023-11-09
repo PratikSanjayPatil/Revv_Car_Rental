@@ -1,4 +1,13 @@
-let ImgArr = [
-    "C:\Users\prati\Desktop\Website\img\bg img 1.png",
-    "C:\Users\prati\Desktop\Website\img\ST_LT_BG_2.png"
-]
+console.log("index");
+let menubtn = document.getElementById("menu_btn")
+menubtn.addEventListener("click",()=>{
+    opnsdmenu(true);
+})
+let menuclosebtn = document.getElementById("menu_close_btn")
+menuclosebtn.addEventListener("click",()=>{
+    opnsdmenu(false);
+})
+const opnsdmenu = (flag)=>{
+    let sidemenu = document.getElementById("side_menu")
+    sidemenu.className = flag ? "active" : ""
+}
