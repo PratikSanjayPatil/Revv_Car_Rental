@@ -4,48 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Self Drive Car Rental | Safe, Sanitized Car Subscription with Revvcle</title>
-    <link rel="stylesheet" href="style_index.css">
-    <link rel="stylesheet" href="media_querie.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
    <!-- Navbar Started -->
-   <div id="side_menu">
-    <div class="navbar flex">
-        <div class="login flex">
-            <div class="login_baba_logo">
-                <img src="img/assets/asset 2.svg" alt="">
+   <div id="side_menu" >
+        <div class="navbar flex">
+            <div class="login flex">
+                <div class="login_baba_logo">
+                    <img src="img/assets/asset 2.svg" alt="">
+                </div>
+                <h3>Login / Signup</h3>
             </div>
-            <h3>Login / Signup</h3>
+            <div class="btn">
+                <i id="menu_close_btn" class="ri-menu-3-line"></i>
+            </div>
         </div>
-        <div class="btn">
-            <img id="menu_close_btn" src="img/assets/menu_logo.png" alt="">
-        </div>
-    </div>
+        <button class="side_menu_button"><p>Car Rental</p></button>
+        <button class="side_menu_button">Car Subscription</button>
+        <button class="side_menu_button">FAQ</button>
+        <button class="side_menu_button">Policy - Car Rental</button>
    </div>
-
+   <div class="balancemargin"></div>
    <div id="nav">
         <div class="container flex">
             <div class="menu">
-                <img id="menu_btn" src="img/assets/menu_logo.png" alt="">
+                <i id="menu_btn" class="ri-menu-line"></i>
             </div>
-            <div class="menu_white_logo">
+            <div class="white_main_logo">
                 <img src="img/assets/White_main_logo.png" alt="">
             </div>
-
             <div class="main_logo">
                 <img src="img/assets/main_logo.png" alt="">
             </div>
             <div class="links flex">
                 <a href="#">FAQs</a>
-                <div class="login flex ">
+                <div class="login flex">
                     <img src="img/assets/login_logo.svg" alt="">
                     <a href="#">Login</a>
                 </div>
             </div>
         </div>
    </div>
-   <div class="spacer"></div>
    <!-- Navbar Ended -->
+   
+
+   <!-- Featured Section -->
+   <div id="featured">
+        <div class="container">
+            <div class="controls flex">
+                <div class="heading ">
+                    <h2>Featured</h2>
+                </div>
+                <div class="btns">
+                    <i id="feature_left" class="ri-arrow-left-s-line"></i>
+                    <i id="feature_right" class="ri-arrow-right-s-line"></i>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="featuressection flex">
+                    <div class="feature_card">
+                        <img src="img/assets/subscriptions_banners_02-min.png" alt="">
+                    </div>
+                    <div class="feature_card">
+                        <img src="img/assets/subscriptions_banners_03-min.png" alt="">
+                    </div>
+                    <div class="feature_card">
+                        <img src="img/assets/subscriptions_banners_04-min.png" alt="">
+                    </div>
+                    <div class="feature_card">
+                        <img src="img/assets/subscriptions_banners_05-min.png" alt="">
+                    </div>
+                    <div class="feature_card">
+                        <img src="img/assets/subscriptions_banners_06-min.jpg" alt="">
+                    </div>
+                    <div class="feature_card">
+                        <img src="img/assets/subscriptions_banners_01-min.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+    <!-- Featured Section --> 
+
+    <!-- Offer Section -->       
+            <div class="controls flex">
+                <div class="heading ">
+                    <h2>Offers</h2>
+                </div>
+                <div class="btns">
+                    <i id="offer_left" class="ri-arrow-left-s-line"></i>
+                    <i id="offer_right" class="ri-arrow-right-s-line"></i>
+                </div>
+            </div> 
+            <div class="slider2">
+                <div class="offer_section flex">
+                    <div class="offer_card2">
+                        <img src="img/assets/Discound01.png" alt="">
+                    </div>
+                    <div class="offer_card2">
+                        <img src="img/assets/Discound02.png" alt="">
+                    </div>
+                    <div class="offer_card2">
+                        <img src="img/assets/Discound03.png" alt="">
+                    </div>
+                    <div class="offer_card2">
+                        <img src="img/assets/Discound04.png" alt="">
+                    </div>
+                </div>
+            </div> 
+
+    <!-- Offer Section -->          
+        </div>
+   </div>        
+   
+
+    <div class="spacer"></div>
 </body>
 </html>
-<script src="Script_index.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="index.js"></script>

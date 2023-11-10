@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins";
+    font-weight: 100;
+    box-sizing: border-box;
+}
+.spacer{
+    height: 150vh;
+    background-color: aquamarine;
+}
+html{
+    font-size: 20px;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+}
+i{
+    color: #ffff;
+    font-size: 40px;
+    cursor: pointer;
+}
+/* Utility Classses */
+.flex{
+    display: flex;
+    align-items: center;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;   
+    overflow: hidden;
+    padding: 10px 20px;
+}
+.br{
+    border: 1px solid red;
+}
+/* Utility Class */
+
+
+#nav{
+    height: 60px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    z-index: 998;
+}
+.balancemargin{
+    height: 60px;
+}
+#nav > div{
+    justify-content: space-between;
+    height: 100%;
+}
+#nav > div > .menu, .white_main_logo{
+    display: none;
+}
+#nav > div > div {
+    height: 100%;
+}
+.links > *{
+    margin: 0 20px;
+}
+.links a{
+    margin-left: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.1s ease-in;
+}
+.links a:hover{
+    color: #1caba2;
+}
+/* Side Menu  */
+#side_menu{
+    height: 100vh;
+    width: 80%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: 0.3s ease-in-out;
+    background-color: #ffff;
+    z-index: 999;
+    display: none;
+}
+.active{
+    left: 0 !important;
+}
+#side_menu > .navbar{
+    height: 125px;
+    background-color: #1c82aa;
+    padding: 20px 30px;
+    justify-content: space-between;
+    background-image: linear-gradient(to left , rgb(28,171,162),rgb(28,127,171));
+}
+#side_menu .login{
+    width: 40%;
+    justify-content: space-between;
+}
+#side_menu .login h3{
+    color: aliceblue;
+}
+#side_menu .btn{
+    height: 35px;
+}
+#side_menu .login .login_baba_logo{
+    height: 50px;
+    width: 50px;
+    background-color: #00000066;
+    border-radius: 100px;
+    position: relative;
+}
+#side_menu .login .login_baba_logo > img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+#side_menu > .side_menu_button{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    border: none;
+    text-align: left;
+    padding: 0 40px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+#side_menu > .side_menu_button:hover{
+    background-color: rgba(0,0,0,0.1);
+    transition: all 450ms cubic-bezier (0.23,1,0.32,1) 0ms;
+}
+
+
+/* Featured Section */
+
+#featured{
+    height: 100vh;
+    margin: auto;
+    background-color: #f1f4f8;
+}
+#featured h2{
+    color: #98a6b3;
+    font-weight: 500;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+#featured .controls{
+    width: 100%;
+    justify-content: space-between;
+    margin: 40px 0 10px 0;
+}
+.controls i{
+    color: black;
+
+}
+.slider{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.slider .featuressection{
+    width: fit-content;
+    gap: 25px;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.feature_card{
+    width: 370px;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 22px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+.feature_card img{
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    object-fit:contain;
+
+}
+.slider::-webkit-scrollbar {
+    display: none;
+    scrollbar-width: none;
+  }
+
+/* Offer Section */
+
+.slider2{
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+
+.slider2 .offer_section{
+    width: fit-content;
+    gap: 25px;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.offer_card2{
+    width: 370px;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 22px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.offer_card2 img{
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.slider2::-webkit-scrollbar {
+    display: none;
+    scrollbar-width: none;
+  }

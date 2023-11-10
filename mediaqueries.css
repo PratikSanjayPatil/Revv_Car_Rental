@@ -6,19 +6,22 @@
         width: 60%;
         margin: 0;
     }
-    #nav > div > .menu{
+    #nav > div > .menu, .white_main_logo{
         display: block;
-        height: 35px;
     }
-    #nav > div > .links{
+    #nav > div > .links, .main_logo{
         display: none;
     }
+    #side_menu{
+        display: block;
+    }
+}
 
-    #nav > div > .main_logo{
+@media screen and (max-width:650px) {
+    #side_menu > div > .login > h3{
         display: none;
     }
-
-    #nav > div > .menu_white_logo{
-        display: block;
+    #nav > div{
+        width: 100%;
     }
 }
