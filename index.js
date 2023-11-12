@@ -7,12 +7,60 @@ let menuclosebtn = document.getElementById("menu_close_btn")
 menuclosebtn.addEventListener("click",()=>{
     opnsdmenu(false);
 })
+
 const opnsdmenu = (flag)=>{
     let sidemenu = document.getElementById("side_menu")
     sidemenu.className = flag ? "active" : ""
 }
 
 /* First Slider */
+
+
+// Main Slider
+const main_slider = ()=>{
+    let pre_btn = document.querySelector("#slider #slide_btns > .btn1")
+    pre_btn.style.backgroundColor="Black";
+    pre_btn.style.width="17px"
+    let prev_btn = document.querySelector("#slider #slide_btns > .btn1");
+    let next_btn = document.querySelector("#slider #slide_btns > .btn2");
+    prev_btn.addEventListener("click",()=>{
+        prevSlide()
+    })
+    next_btn.addEventListener("click",()=>{
+        nextSlide()
+    })
+    const sliderImages = document.getElementById('slider_images');
+    let currentIndex = 0;
+    
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % 2;
+        updateSlider(currentIndex);
+    }
+    
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + 2) % 2;
+        updateSlider(currentIndex);
+    }
+    
+    function updateSlider(currentIndex) {
+        const translateValue = -currentIndex * 100 + '%';
+        next_btn.style.width = (currentIndex==1) ? "17px" : "6px"
+        next_btn.style.backgroundColor=(currentIndex==1) ? "black" : ""
+        prev_btn.style.width = (currentIndex==0) ? "17px" : "6px"
+        prev_btn.style.backgroundColor=(currentIndex==0) ? "black" : ""
+        sliderImages.style.transform = 'translateX(' + translateValue + ')';
+    }
+    setInterval(()=>{
+        currentIndex = (currentIndex)? 0:1
+        updateSlider(currentIndex);
+    },8000)
+}
+main_slider()
+
+
+
+/* Main Slider*/
+
 
 /*for mobile */
 var screenWidth = window.innerWidth;

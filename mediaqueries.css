@@ -30,3 +30,80 @@
 }
 
 /*for Navbar*/
+
+/* Main Slider */
+
+@media screen and (max-width:1300px) and (min-width:900px) {
+    #slider_images .child_img{
+        height: 48%;
+        width: 48%;
+        object-fit: contain;
+        position: absolute;
+        top: 50%;
+        transform: translate(0,-50%);
+    }
+    #slider_images .child_img1{
+        right: -1%;
+    }
+
+    #slider_images .child_img2{
+        /* left:140%; */
+        right: -99%;
+    }
+
+    #rental_box{
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        height: 70%;
+        width: 25%;
+        background-color: #ffffff;
+        transform: translate(-50%,-50%);
+        border-radius: 14px;
+        box-shadow: 0 3px 6px 0 rgba(0,0,0,.16);
+        width: 500px;
+        padding: 40px 50px 0;
+    }
+}
+
+
+@media screen and (max-width:900px) and (min-width:750px){
+    #slider_images .child_img{
+        height: 45%;
+        width: 45%;
+        object-fit: contain;
+        position: absolute;
+        top: 50%;
+        transform: translate(0,-50%);
+    }
+
+    #slider_images .child_img1{
+        right: 2%;
+    }
+
+    #slider_images .child_img2{
+        /* left:140%; */
+        right: -99%;
+    }
+
+    #rental_box{
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        height: 70%;
+        width: 25%;
+        background-color: #ffffff;
+        transform: translate(-50%,-50%);
+        border-radius: 14px;
+        box-shadow: 0 3px 6px 0 rgba(0,0,0,.16);
+        width: 400px;
+        padding: 40px 50px 0;
+    }
+}
+
+@media screen and (max-width:750px) {
+    #slider{
+        display: none;
+    }
+}
+/* Main Slider */
