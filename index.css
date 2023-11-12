@@ -120,6 +120,7 @@ i{
     background-color: #00000066;
     border-radius: 100px;
     position: relative;
+    cursor: pointer;
 }
 #side_menu .login .login_baba_logo > img{
     position: absolute;
@@ -238,3 +239,70 @@ i{
     display: none;
     scrollbar-width: none;
   }
+
+.btns .offer_left{
+    opacity: 0.5;
+}  
+
+/* Offer Section */
+
+
+/*why revv section*/
+.slider3{
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+
+.slider3 .why_rev_section{
+    width: fit-content;
+    gap: 25px;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.black{
+    background-color: black !important;
+    border-radius: 25px;
+    padding-bottom: 8px;
+}
+.black {
+    width: 370px;
+    cursor: pointer;
+    
+}
+.why_revv_card2{
+    background-color: white;
+    background-color: #ffffff;
+    border-radius: 22px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.why_revv_card2 .why_rev_img img{
+    object-fit: contain;
+    height: 60px;
+    width: 60px;
+    margin:0 10px;
+}
+
+.why_revv_card2 h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.why_revv_card2 p{
+    font-size: 14px;
+    color: #122232B3;
+    font-weight: 500;
+}
+
+.why_revv_card2 .why_rev_info{
+    padding: 10px 0;
+}
+
+
+
+/*why revv section*/
