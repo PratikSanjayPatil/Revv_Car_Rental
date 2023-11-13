@@ -64,6 +64,30 @@
         width: 500px;
         padding: 40px 50px 0;
     }
+
+   
+    .active{
+        position: relative;
+        box-shadow: 0 7px 6px 0 rgba(0,0,0,.16);
+        background-color: #ffffff;
+        color: black !important;
+    }
+
+    #rental_box .header > div{
+        color: #ffffff;
+        width: fit-content;
+        text-align: center;
+        border-radius: 15px;
+       
+    }
+    #rental_box .header > div h3{
+        font-weight: bold;
+        font-size: 19px;
+    }
+    #rental_box .header > div p{
+        font-size: 12px;
+        opacity: 0.8;
+    }
 }
 
 
@@ -86,6 +110,13 @@
         right: -99%;
     }
 
+    .active{
+        position: relative;
+        box-shadow: 0 7px 6px 0 rgba(0,0,0,.16);
+        background-color: #ffffff;
+        color: black !important;
+    }
+
     #rental_box{
         position: absolute;
         top: 50%;
@@ -98,6 +129,27 @@
         box-shadow: 0 3px 6px 0 rgba(0,0,0,.16);
         width: 400px;
         padding: 40px 50px 0;
+    }
+
+    .selection_box{
+        width: 100%;
+        width: fit-content;
+    }
+
+    #rental_box .header > div{
+        color: white;
+        width: fit-content;
+        text-align: center;
+        border-radius: 15px;
+       
+    }
+    #rental_box .header > div h3{
+        font-weight: bold;
+        font-size:18px;
+    }
+    #rental_box .header > div p{
+        font-size: 13px;
+        opacity: 0.8;
     }
 }
 

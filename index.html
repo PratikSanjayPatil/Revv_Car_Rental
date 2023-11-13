@@ -61,12 +61,52 @@
         <img class="child_img1 child_img" src="img/assets/asset 7.png" alt="">
         <img class="child_img2 child_img" src="img/assets/asset 8.png" alt="">
     </div>
+    
+
     <div id="rental_box">
         <div class="header flex">
-            
+            <div class="rental active">
+                <div class="down_arrow"></div>
+                <h3>Rentals</h3>
+                <p>For hours & days</p>
+            </div>
+            <div class="subscriptions">
+                <div class="down_arrow"></div>
+                <h3>Subscription</h3>
+                <p>For more than 1 month</p>
+            </div>
         </div>
-        
+        <div class="rental_logo">
+            <img src="img/assets/asset 9.svg" alt="">
+            <p>Car Rental in Pune</p>
+        </div>
+        <div class="selection_box">
+            <div class="select">
+                <select id="city" name="city">
+                    <option value="volvo">Mumbai</option>
+                    <option value="saab">Pune</option>
+                    <option value="mercedes">Sangli</option>
+                    <option value="audi">Satara</option>
+                </select>
+            </div>
+            <div class="calendor flex">
+                <div class="start_data flex">
+                    <!-- <label for="eventDate">Select a date:</label> -->
+                    <input type="date" id="eventDate" name="eventDate">
+                </div>
+                <div class="end_data flex">
+                    <input type="datetime-local" >
+                    
+                </div>
+            </div>
+        </div>
+        <div class="search_btn flex br">
+            <button>Search</button>
+        </div>
     </div>
+
+
+
     <div id="slide_btns">
         <button class="btn1"></button>
         <button class="btn2"></button>
