@@ -13,7 +13,33 @@ const opnsdmenu = (flag)=>{
     sidemenu.className = flag ? "active" : ""
 }
 
-/* First Slider */
+//nav Bar 2
+
+const nav2_display = ()=>{
+    let nav = document.getElementById("nav2");
+    document.addEventListener("scroll",()=>{
+        var scrollLength = window.scrollY || document.documentElement.scrollTop;
+        // nav.style.top = scrollLength>=550 ? "60px" : "0"
+        if(scrollLength>=510){
+            gsap.to("#nav2",{
+                top:60,
+                duration:0.5,
+                delay:0,
+            })
+        }
+        else{
+            gsap.to("#nav2",{
+                top:0,
+                duration:0.5,
+                delay:0,
+                ease: "power2.out"
+            })
+        }
+    })
+}
+nav2_display()
+
+//Nav Bar 2 End
 
 
 // Main Slider
@@ -59,7 +85,79 @@ main_slider()
 
 
 
+
+// Select City Section
+
+
+const add_city = ()=>{
+    const top50CitiesInIndia = [
+        "Select City",
+        "Mumbai",
+        "Delhi",
+        "Bangalore",
+        "Hyderabad",
+        "Ahmedabad",
+        "Chennai",
+        "Kolkata",
+        "Surat",
+        "Pune",
+        "Jaipur",
+        "Lucknow",
+        "Kanpur",
+        "Nagpur",
+        "Indore",
+        "Thane",
+        "Bhopal",
+        "Visakhapatnam",
+        "Pimpri-Chinchwad",
+        "Patna",
+        "Vadodara",
+        "Ghaziabad",
+        "Ludhiana",
+        "Agra",
+        "Nashik",
+        "Faridabad",
+        "Meerut",
+        "Rajkot",
+        "Kalyan-Dombivali",
+        "Vasai-Virar",
+        "Varanasi",
+        "Srinagar",
+        "Aurangabad",
+        "Dhanbad",
+        "Amritsar",
+        "Navi Mumbai",
+        "Allahabad",
+        "Howrah",
+        "Ranchi",
+        "Gwalior",
+        "Jabalpur",
+        "Coimbatore",
+        "Vijayawada",
+        "Jodhpur",
+        "Madurai",
+        "Raipur",
+        "Chandigarh",
+        "Guntur",
+        "Guwahati"
+      ];
+      let select = document.querySelectorAll("#city");
+    //   const selected_city = document.getElementById("selected_city").innerText=top50CitiesInIndia[0]
+      console.log(select);
+      select.forEach((ppp)=>{
+        top50CitiesInIndia.map((item)=>{
+            let opt = document.createElement("option");
+            opt.value=item
+            opt.text=item
+            ppp.appendChild(opt)
+          })
+      })
+}
+
+//Select City Section End
 /* Main Slider*/
+
+/* First Slider */
 
 
 /*for mobile */
@@ -188,9 +286,10 @@ else{
 
 
 
-/* First Slider */
+/* First Slider End */
 
 /* Second Slider */
+
 
 /*for Mobile*/
 
@@ -368,4 +467,134 @@ else{
 }
 
 /* third slider */    
+
+
+
+//Happy Customers
+
+    /*for Mobile*/
+
+
+    let a = 0
+    let happy_left = document.getElementById("happy_left")
+    let happy_right = document.getElementById("happy_right")
+    const scrollslider4 = (a)=>{
+        
+            gsap.to(".happy_slider .happy_section",{
+            left:(a),
+            duration:1,
+
+        })
+    }   
+   
+   if(screenWidth <= 450){
+           
+       const manualscrollslide4 = ()=>{
+   
+           happy_left.style.opacity=0.5;
+           document.getElementById("happy_right").addEventListener("click",()=>{
+               if(a>-1975){
+                   scrollslider4(a-=395);
+               }
+               if(a===-1975){
+                   happy_right.style.opacity=0.5;
+               }
+               if(a!==0){
+                   happy_left.style.opacity=1;
+               }
+   
+           })
+           document.getElementById("happy_left").addEventListener("click",()=>{
+               if(a<0){
+                   scrollslider4(a+=395);
+               }
+               if(a===0){
+                   happy_left.style.opacity=0.5;
+               }
+               if(a!==-1975){
+                   happy_right.style.opacity=1;
+               }
+           })
+       }
+       manualscrollslide4();
+   }
+   
+   /*for Mobile*/
+   
+   else{
+
+       const manualscrollslide4 = ()=>{
+   
+           happy_left.style.opacity=0.5;
+           document.getElementById("happy_right").addEventListener("click",()=>{
+               if(a>-590){
+                   scrollslider4(a-=295);
+                   
+               }
+               if(a===-590){
+                happy_right.style.opacity=0.5;
+               }
+               else if(a!==0){
+                    happy_left.style.opacity=1;
+               }
+           })
+           document.getElementById("happy_left").addEventListener("click",()=>{
+               if(a<0){
+                   scrollslider4(a+=295);
+                   
+               }
+               if(a===0){
+                happy_left.style.opacity=0.5;
+               }
+               else if(a!==-590){
+                    happy_right.style.opacity=1;
+               }
+           })
+       }
+       manualscrollslide4();
+   }
+   
+   
+   //Happy customers
+
+
+
+// Nav Bar 2 start
+
+add_city();
+const rental_box_change = ()=>{
+    const subs_header = document.getElementById("subs_header")
+    const rental_header = document.getElementById("rental_header")
+    const cale_box = document.querySelector("#rental_box .selection_box .calendor")
+    const select = document.querySelector("#rental_box .selection_box select")
+    const rental_logo_img = document.getElementById("rental_logo_img")
+    const inp = document.querySelector("#rental_box .selection_box select")
+    const selected_city = document.getElementById("selected_city")
+    inp.addEventListener("change",()=>{
+        selected_city.innerText=inp.value
+
+    })
+    subs_header.addEventListener("click",()=>{
+        subs_header.classList="active"
+        rental_header.classList=null
+        cale_box.style.display="none"
+        select.style.borderRadius = "10px";
+        select.style.marginTop="40px"
+        rental_logo_img.src="./Assets/subscription_web.png"
+    })
+    rental_header.addEventListener("click",()=>{
+        rental_header.classList="active"
+        subs_header.classList=null
+        cale_box.style.display="flex"
+        select.style.borderRadius = "10px 10px 0 0";
+        select.style.marginTop="0"
+        rental_logo_img.src="./Assets/asset 9.svg"
+
+    })
+}
+rental_box_change();
+
+
+// Nav Bar End
+
 

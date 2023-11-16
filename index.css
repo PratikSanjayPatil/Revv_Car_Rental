@@ -5,16 +5,14 @@
     font-weight: 100;
     box-sizing: border-box;
 }
-.spacer{
-    height: 100vh;
-    background-color: aquamarine;
-}
+
 html{
     font-size: 20px;
 }
 html,body{
     height: 100%;
     width: 100%;
+    background-color: #f1f4f8;
 }
 a{
     text-decoration: none;
@@ -82,6 +80,53 @@ i{
 .links a:hover{
     color: #1caba2;
 }
+
+
+#nav2{
+    background-color: #ffffff;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 997;
+    transition: 0.1s ease-in ;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#nav2 > div{
+    height: 100%;
+    padding: 3px 10px;
+}
+#nav2 form{
+    height: 80% !important;
+    width: 100%;
+    /* gap: 20px; */
+    border: 0.2px solid rgba(133, 132, 132, 0.235);
+    border-radius: 15px;
+}
+#nav2 form input,select,option{
+    all: unset;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    font-weight: 600;
+    border-left: 2px solid rgba(0, 0, 0, 0.235);
+    padding: 0 20px;
+    cursor: pointer;
+}
+#nav2 select{
+    border: none;
+}
+#nav2 input[type="submit"]{
+    background-image: linear-gradient(to left, rgba(28, 171, 162, 0.447) 25%, rgba(28, 128, 171, 0.47));
+    border-radius: 13px;
+    height: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    color: #ffff;
+}
+
 /* Side Menu  */
 #side_menu{
     height: 100vh;
@@ -326,9 +371,11 @@ i{
 /* Featured Section */
 
 #featured{
-    height: 95vh;
+    height: auto;
     margin: auto;
     background-color: #f1f4f8;
+   
+    padding: 0px;
 }
 #featured h2{
     color: #98a6b3;
@@ -360,17 +407,17 @@ i{
 }
 .feature_card{
     width: 370px;
-    background-color: black;
+    /* background-color: black; */
     cursor: pointer;
     border-radius: 22px;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    
 }
 .feature_card img{
     border-radius: 20px;
     height: 100%;
     width: 100%;
     object-fit:contain;
-
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 .slider::-webkit-scrollbar {
     display: none;
@@ -396,10 +443,10 @@ i{
 }
 .offer_card2{
     width: 370px;
-    background-color: black;
+    /* background-color: black; */
     cursor: pointer;
     border-radius: 22px;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px; */
 }
 
 .offer_card2 img{
@@ -407,6 +454,7 @@ i{
     height: 100%;
     width: 100%;
     object-fit: contain;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 .slider2::-webkit-scrollbar {
@@ -438,21 +486,20 @@ i{
     z-index: 0;
 }
 .black{
-    background-color: black !important;
+    /* background-color: black !important; */
     border-radius: 25px;
-    padding-bottom: 8px;
-}
-.black {
     width: 370px;
+    height: auto;
     cursor: pointer;
-    
 }
+
 .why_revv_card2{
     background-color: white;
     background-color: #ffffff;
     border-radius: 22px;
-    padding: 10px;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    /* padding: 10px; */
+    margin-bottom: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 .why_revv_card2 .why_rev_img img{
@@ -484,9 +531,9 @@ i{
 /*FAQ*/
 
 #faq{
-    height: 100vh;
-    margin: auto;
+    height: auto;
     background-color: #f1f4f8;
+    padding-bottom: 10px;
 }
 
 .view .heading h2{
@@ -512,7 +559,7 @@ i{
     background-color: #ffff;
     border-radius: 15px;
     padding: 20px 40px;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 #faq .container .questions{
@@ -548,3 +595,385 @@ hr{
     text-decoration: none;
 }
 /*FAQ*/
+
+
+/*Happy Customers section start*/
+
+#happy_customer{
+    height: auto;
+    margin: auto;
+    background-color: #f1f4f8;
+    padding:20px 0 30px 0;
+}
+
+#happy_customer h2{
+    color: #98a6b3;
+    font-weight: 500;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+#happy_customer .controls{
+    width: 100%;
+    justify-content: space-between;
+    margin: 40px 0 10px 0;
+}
+.controls i{
+    color: black;
+
+}
+
+.happy_slider{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.happy_slider .happy_section{
+    width: fit-content;
+    gap: 25px;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.happy_feature_card{
+    width: 270px;
+    height: 350px;
+    background-color:#ffff;
+    cursor: pointer;
+    border-radius: 22px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.happy_feature_card .heading{
+    padding: 20px;
+}
+
+.happy_feature_card .passage{
+    padding: 20px;
+}
+.happy_feature_card .passage p{
+    font-size: 0.7em;
+    color: #122232B3;
+}
+.happy_feature_card .heading h4{
+    font-weight: 600;
+}
+.happy_feature_card .right{
+    width: auto;
+   
+    display: flex;
+    justify-content: right;
+    padding: 0 20px;
+}  
+.happy_feature_card .right img{
+    object-fit: contain;
+    width: 60px;
+    height: 40px;
+}
+
+.happy_slider::-webkit-scrollbar {
+    display: none;
+    scrollbar-width: none;
+}
+
+/* Happy customer section end */
+
+
+/* Download app */
+
+.download{
+    height: 385px;
+    width: 100%;
+   
+}
+
+.download .container{
+    height: 385px;
+    width:100%;
+    background-color: #ffff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 25px;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.download .container .download_links{
+    height: 385px;
+    width: 45%;
+    margin-top: 10px;
+    padding-top: 60px;
+    flex-direction: column;
+    object-fit: contain;
+}
+
+.download_links img{
+    height: 100%;
+    width: 100%;
+}
+
+.img_links {
+    width: 100%;
+    overflow: hidden;
+    justify-content: space-around;
+   
+}
+
+.img_links .a1, .a2{
+    width: 40%;
+}
+
+.download_linksk .heading{
+    font-size: 26px;
+    color: #98A6B3CF;
+    font-weight: bold;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.download_linksk {
+    flex-direction: column;
+    width: 40%;
+}
+.download_linksk .img_links{
+    width: 100%;
+}   
+
+.download_linksk .img_links img{
+    cursor: pointer;
+}
+
+/*Download app end*/
+
+
+/* journey */
+
+
+#journey{
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+#journey .container2{
+    max-width: 80%;
+    margin: auto;
+    height: 100%;   
+    overflow: hidden;
+    padding: 10px 20px;
+}
+
+
+#journey .container{
+    background-color: #ffff;
+    height: 233px;
+    border-radius: 25px;
+    width: 80%;
+    justify-content: space-around;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#journey .heading{
+    color: #98a6b3;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+#journey .heading h2{
+    font-weight: 600;
+}
+
+#journey .container .inner_div{
+    width: 20%;
+    flex-direction: column;
+}
+#journey .container .inner_div img{
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+#journey .container .inner_div h4{
+    font-weight: 600;
+}
+
+#journey .container .inner_div p{
+    font-size: 0.7em;
+    color: #122232B3;
+}
+
+
+
+/* journey */
+
+
+/* service */
+
+
+#service{
+    padding-bottom: 50px;
+}
+#service .container{
+    margin-top: 40px;
+    height: auto;
+    background-color: #2A2B36;
+    border-radius: 25px;
+    padding: 40px;
+    
+}
+
+#service .container .heading{
+    width: 100%;
+    color: #ffff;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+#service .container .names{
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#service .container .names .inner_names{
+    width: 30%;
+    flex-direction: column;
+    padding: 15px;
+    
+}
+
+
+#service .container .names .inner_names p{
+    font-size: 0.7em;
+    margin: 10px 0;
+    color: #c3c2c2;
+}
+/* service */
+
+
+
+/* social */
+
+#social{
+    padding-bottom: 30px;
+
+}
+
+#social .container{
+    background-color: #ffff;
+    height: auto;
+    border-radius: 25px;
+    padding: 40px;
+    justify-content: space-around;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    
+}
+
+#social .container .inner_social{
+    width: 30%;
+    
+}
+
+#social .container .inner_social img{
+    height: 70px;
+    
+}
+
+#social .container .inner_social p{
+    font-size: 0.6em;
+    color: #767676;
+}
+
+#social .container .inner_social a{
+    font-size: 0.7em;
+    color: #616060;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+#social .container .inner_social a:hover{
+    color: black;
+}
+
+#social .container .inner_social .imges{
+    width: auto;
+    
+}
+
+#social .container .inner_social .imges img{
+    width: 22px;
+    height: 22px;
+    margin: 0 15px;
+}
+
+#social .container .inner_social h5{
+    color: #504f4f;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.download_revv_app{
+    margin-top: 30px;
+    
+}
+
+.download_revv_app h5{
+    color: #504f4f;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.download_revv_app .link{
+    width: 80%;
+    height: 50px;
+    padding: 0 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border: 1px solid rgb(211, 211, 211);
+}
+
+.download_revv_app .link img{
+    height: 10px;
+    width: 25px;
+    margin-top: -15px;
+    margin-right: 10px;
+}
+
+.download_revv_app .link h5:hover{
+     color: #49a6ba !important;
+     cursor: pointer;
+}
+/* social end */
+
+
+/*  Discription start */
+
+#discription .container .heading h1{
+    font-size: 1.4em;
+    color: #98a6b3;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+
+#discription .container .passage{
+    font-size: 0.65em;
+    color: #122232;
+    margin-bottom: 40px;
+}
+
+ul li{
+    margin-top: 15px;
+    margin-left: 15px;
+    
+}
+
+/*  Discription end */
+
+.spacer{
+    height: 100%;
+    width: 100%;
+    background-color: none;
+}
+
+
+
+
