@@ -5,3 +5,6 @@ Implement feature and offer slider 10-11-23
 offer slider completed with all animations 11-11-23
 Add main slider and FAQs section with responsiveness 12-11-23
 Add city select city 13-11-23
+Add journey and serviable city section 14-11-23
+Add Discription section 15-11-23
+Make all sections responsive 15-11-23
