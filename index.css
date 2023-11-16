@@ -73,7 +73,7 @@ i{
 .links a{
     margin-left: 10px;
     color: rgb(0, 0, 0);
-    font-size: 18px;
+    font-size: 0.75em;
     font-weight: 500;
     transition: 0.1s ease-in;
 }
