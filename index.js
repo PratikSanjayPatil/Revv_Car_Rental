@@ -1,4 +1,23 @@
-console.log("index");
+var login = document.getElementById("lo_n");
+var login2 = document.getElementById("lo_n2");
+let saved_detail = JSON.parse(localStorage.getItem("Authentic")) || {};
+if(saved_detail === true){
+    login.addEventListener("click", function(event) {
+        // Prevent the default behavior of the anchor tag
+        event.preventDefault();
+    
+        alert("Allready Login")
+    });
+
+    login2.addEventListener("click", function(event) {
+        // Prevent the default behavior of the anchor tag
+        event.preventDefault();
+    
+        alert("Allready Login")
+    });
+}
+
+
 let menubtn = document.getElementById("menu_btn")
 menubtn.addEventListener("click",()=>{
     opnsdmenu(true);
@@ -40,6 +59,14 @@ const nav2_display = ()=>{
 nav2_display()
 
 //Nav Bar 2 End
+
+
+// Login and Logout
+
+
+
+
+// login and logout end
 
 
 // Main Slider

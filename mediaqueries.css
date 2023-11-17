@@ -18,6 +18,10 @@
     #side_menu{
         display: block;
     }
+
+    #side_menu > div > .login > a h3{
+        display: none;
+    }
     #slider{
         height: 50%;
         background-image: linear-gradient(to left , rgb(28,171,162),rgb(28,127,171));
@@ -76,9 +80,7 @@
 }
 
 @media screen and (max-width:650px) {
-    #side_menu > div > .login > h3{
-        display: none;
-    }
+    
     #nav > div{
         width: 100%;
     }
@@ -131,7 +133,7 @@
         position: absolute;
         top: 50%;
         left: 25%;
-        height: 80%;
+        height: 85%;
         width: 25%;
         background-color: #ffffff;
         transform: translate(-50%,-50%);
@@ -204,7 +206,7 @@
         position: absolute;
         top: 50%;
         left: 25%;
-        height: 80%;
+        height: 85%;
         width: 25%;
         background-color: #ffffff;
         transform: translate(-50%,-50%);
@@ -212,6 +214,10 @@
         box-shadow: 0 3px 6px 0 rgba(0,0,0,.16);
         width: 400px;
         padding: 40px 50px 0;
+    }
+
+    #rental_box .header{
+        height: auto;
     }
 
     .selection_box{

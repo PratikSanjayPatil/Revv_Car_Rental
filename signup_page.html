@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+            *{
+            padding: 0;
+            margin: 0;
+            font-family: "Poppins";
+            font-weight: 100;
+            box-sizing: border-box;
+            }
+
+            html{
+            font-size: 20px;
+            }
+            html,body{
+                height: 100%;
+                width: 100%;
+                background-color: #f1f4f8;
+            }
+            a{  
+                color: #696868;
+                margin-top: 10px;
+                font-size: 0.7em;
+                text-decoration: none;
+                display: inline-block;
+            }
+
+            .container{
+                max-width: 1200px;
+                margin: auto;
+                height: 100%;   
+                overflow: hidden;
+                padding: 10px 20px;
+            }
+
+            .br{
+                border: 1px solid red;
+            }
+
+            .flex{
+                display: flex;
+                align-items: center;
+            }
+
+            /*  Login div start */
+
+            #signup_page{
+                width: 100%;
+                height: 100vh;
+            }
+
+            #signup_page .container{
+                height: 450px;
+                width: 450px;
+                justify-content: center;
+                flex-direction: column;
+                background-color: #ffff;
+                border-radius: 25px;
+                border: 0.2px solid rgba(133, 132, 132, 0.235);
+                box-shadow: 0 3px 6px 0 rgba(0,0,0,.16);
+            }
+
+            #signup_page .container .credential_signup{
+                flex-direction: column;
+                width: 80%;
+                margin-top: 20px;
+
+            }
+            /*  Login div end */
+            #signup_page .container .credential_signup input{
+                width: 100%;
+                height: 40px;
+                font-size: 1em;
+                border-radius: 15px;
+                border: 0.2px solid rgba(73, 73, 73, 0.235);
+            } 
+
+            #signup_page .container .signup_div_head{
+                color: #696868;
+                font-size: 1.5em;
+                font-weight: 700;
+            }
+            
+            #signup_page .container button{
+                height: 40px;
+                width: 250px;
+                margin-top: 30px;
+                border-radius: 10px;
+                border: none;
+                font-size: 1em;
+                background-image: linear-gradient(to left, rgba(28, 171, 162, 0.447) 25%, rgba(28, 128, 171, 0.47));
+                cursor: pointer;
+            }
+    </style>
+</head>
+<body>
+    <div id="signup_page" class=" flex">
+        <div class="container flex ">
+            <div class="signup_div_head ">
+                SignUp
+            </div>
+            <div class="credential_signup flex">
+                Email
+                <input id="email" type="email" >
+                Password
+                <input id="password" type="password">
+            </div>
+            <div class="submit_signup_btn">
+                <button id="submit">Submit</button>
+            </div>
+            <a href="login_page.html">Already SignUp --> Login</a>
+            <a href="index.html">Home</a>
+        </div>
+    </div>
+</body>
+</html>
+<script src="signup.js"></script>

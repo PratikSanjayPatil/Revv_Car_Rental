@@ -127,6 +127,12 @@ i{
     color: #ffff;
 }
 
+
+/*Nav2*/
+
+
+
+
 /* Side Menu  */
 #side_menu{
     height: 100vh;
@@ -153,13 +159,13 @@ i{
     width: 40%;
     justify-content: space-between;
 }
-#side_menu .login h3{
+#side_menu .login a h3{
     color: aliceblue;
 }
 #side_menu .btn{
     height: 35px;
 }
-#side_menu .login .login_baba_logo{
+#side_menu .login .login_baba_logo a{
     height: 50px;
     width: 50px;
     background-color: #00000066;
@@ -245,7 +251,7 @@ i{
     position: absolute;
     top: 50%;
     left: 30%;
-    height: 80%;
+    height: 85%;
     width: 35%;
     background-color: #ffffff;
     transform: translate(-50%,-50%);
@@ -253,6 +259,7 @@ i{
     box-shadow: 0 3px 6px 0 rgba(0,0,0,.16);
     width: 530px;
     padding: 40px 50px 0;
+    padding-bottom: 40px;
 }
 #rental_box .header{
     border-radius: 18px;
