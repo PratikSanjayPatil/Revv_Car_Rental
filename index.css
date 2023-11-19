@@ -57,7 +57,7 @@ i{
 .balancemargin{
     height: 60px;
 }
-#nav > div{
+#nav > div {
     justify-content: space-between;
     height: 100%;
 }
