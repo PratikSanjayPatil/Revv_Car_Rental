@@ -23,7 +23,7 @@
         display: none;
     }
     #slider{
-        height: 50%;
+        height: 45%;
         background-image: linear-gradient(to left , rgb(28,171,162),rgb(28,127,171));
     }
     #rental_box{
