@@ -36,7 +36,7 @@
         border-radius: 14px;
         box-shadow: 0 3px 6px 0 rgba(0,0,0,.16);
         /* width: 530px; */
-        padding: 10px 20px 0;
+        padding: 20px 20px 25px 20px;
         scale: 0.7;
     }
 
@@ -133,14 +133,14 @@
         position: absolute;
         top: 50%;
         left: 25%;
-        height: 85%;
+        height: auto;
         width: 25%;
         background-color: #ffffff;
         transform: translate(-50%,-50%);
         border-radius: 14px;
         box-shadow: 0 3px 6px 0 rgba(0,0,0,.16);
         width: 500px;
-        padding: 40px 50px 0;
+        padding: 20px 20px 25px 20px;
     }
 
    
@@ -206,14 +206,14 @@
         position: absolute;
         top: 50%;
         left: 25%;
-        height: 85%;
+        height: auto;
         width: 25%;
         background-color: #ffffff;
         transform: translate(-50%,-50%);
         border-radius: 14px;
         box-shadow: 0 3px 6px 0 rgba(0,0,0,.16);
         width: 400px;
-        padding: 40px 50px 0;
+        padding: 20px 20px 25px 20px;
     }
 
     #rental_box .header{
